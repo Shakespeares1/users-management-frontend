@@ -1,16 +1,79 @@
-# React + Vite
+# Gestión de Usuarios - Frontend React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Aplicación frontend desarrollada en React para consumir una API REST de gestión de usuarios desarrollada en Spring Boot.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+La aplicación permite realizar operaciones CRUD (Crear, Consultar, Actualizar y Eliminar) sobre usuarios registrados en una base de datos MySQL.
 
-## React Compiler
+## Tecnologías Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Vite
+* Axios
+* JavaScript
+* HTML5
+* CSS3
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Listar usuarios.
+* Crear usuarios.
+* Actualizar usuarios.
+* Eliminar usuarios.
+* Comunicación con API REST mediante Axios.
+
+## Instalación
+
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/Shakespeares1/users-management-frontend.git
+```
+
+Ingresar a la carpeta:
+
+```bash
+cd users-management-frontend
+```
+
+Instalar dependencias:
+
+```bash
+npm install
+```
+
+Ejecutar la aplicación:
+
+```bash
+npm run dev
+```
+
+## Configuración Backend
+
+La aplicación consume el backend disponible en:
+
+```javascript
+http://localhost:8080/api/users
+```
+
+Configurado en:
+
+```text
+src/services/userService.js
+```
+
+## Evidencia de Funcionamiento
+
+La aplicación permite:
+
+* Crear usuarios.
+* Consultar usuarios.
+* Actualizar usuarios.
+* Eliminar usuarios.
+
+## Autor
+
+Antonio De Ávila
+Universidad de Cartagena
+Desarrollo Web
